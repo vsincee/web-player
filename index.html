@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <button class="main-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="25">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z" />
+</svg></button>
+
+    <input type="search" placeholder="Buscar" class="search-bar">
+
+    <button class="profile"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="25">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+</svg>
+</button>
+
+<button class="notification-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="25">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
+</svg></button>
+</header>
+
+<aside class="sidebar">
+    <h3>Sua Biblioteca</h3>
+    <ul class="playlists">
+        <li><a href="#">Playlist 1</a></li>
+        <li><a href="#">Playlist 2</a></li>
+        <li><a href="#">Playlist 3</a></li>
+        <li><a href="#">Playlist 4</a></li>
+        <li><a href="#">Playlist 5</a></li>
+        <li><a href="#">Playlist 6</a></li>
+    </ul>
+</aside>
+
+<main class="main">
+    <article class="novidades-albuns">
+        <h2>Novidades Para Voce</h2>
+        
+        <div class="ultraviolence">
+        <img src="images/Ultraviolence.png" width="150" alt="Capa Ultraviolence">
+        <h3>Ultraviolence</h3>
+        <h4>Lana Del Rey</h4>
+        </div>
+
+        <div class="loverboy">
+        <img src="images/Certified Lover Boy.png" width="150" alt="Capa Certified Lover Boy">
+        <h3>Certified Lover Boy</h3>
+        <h4>Drake</h4>
+        </div>
+
+        <div class="wallen">
+        <img src="images/One Thing At A Time.png" width="150" alt="Capa One Thing At A Time">
+        <h3>One Thing At A Time</h3>
+        <h4>Morgan Wallen</h4>
+        </div>
+    </article>
+
+    <article class="novidades-musicas">
+        <h2>Novos Lancamentos</h2>
+        
+        <div class="song">
+        <img src="images/Choosin Texas.png" width="150" alt="Capa Choosin Texas"> 
+        <h3>Choosin' Texas</h3>
+        <h4>Ella Langley</h4>
+        </div>
+
+        <div class="song">
+        <img src="images/Graveyeard Whistling.png" width="150" alt="Capa Graveyard Whistling">
+        <h3>Graveyard Whistling</h3>
+        <h4>Morgan Wallen</h4>
+        </div>
+
+        <div class="song3">
+        <img src="images/Changes.png" width="150" alt="Capa Changes">
+        <h3>Changes</h3>
+        <h4>Charlie Puth</h4>
+        </div>
+    </article>
+</main>
+
+<footer class="player-footer">
+  <div class="player-left">
+    <img src="images/Ultraviolence.png" alt="Capa do álbum Ultraviolence" width="50">
+    <div class="track-info">
+      <strong>Brooklyn Baby</strong>
+      <span>Lana Del Rey</span>
+    </div>
+  </div>  
+   
+  
+  <div class="player-center">
+        <div class="botoes-player">
+            <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="15">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061A1.125 1.125 0 0 1 21 8.689v8.122ZM11.25 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061a1.125 1.125 0 0 1 1.683.977v8.122Z" />
+</svg></button>
+            <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="15">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5V18M15 7.5V18M3 16.811V8.69c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061A1.125 1.125 0 0 1 3 16.811Z" />
+</svg></button>
+            <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="15">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.689c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061A1.125 1.125 0 0 1 3 16.811V8.69ZM12.75 8.689c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061a1.125 1.125 0 0 1-1.683-.977V8.69Z" />
+</svg></button>
+            
+  
+  <div class="player-progress">
+        <span>1:30</span> 
+        <div class="progress-bar">
+        <div class="progress" style="width: 45%;">
+      </div>
+        <span>5:51</span>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+
+</body>
+</html>
